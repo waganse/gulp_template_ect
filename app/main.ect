@@ -1,0 +1,71 @@
+<% extend '_layout.ect' %>
+
+<% block 'meta' : %>
+<meta charset="UTF-8">
+<title><%- @title %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description" content="<%- @description %>" />
+<meta name="keywords" content="<%- @keywords %>" />
+<% if @canonical : %>
+<link rel="canonical" href="<%- @canonical %>">
+<% end %>
+<% if @alternate : %>
+<link rel="alternate" href="<%- @alternate %>" >
+<% end %>
+
+<% if @ogTitle : %>
+<meta property="og:title" content="<%- @ogTitle %>">
+<% end %>
+<% if @ogType : %>
+<meta property="og:type" content="<%- @ogType %>">
+<% end %>
+<% if @ogDescription : %>
+<meta property="og:description" content="<%- @ogDescription %>">
+<% end %>
+<% if @ogUrl : %>
+<meta property="og:url" content="<%- @ogUrl %>">
+<% end %>
+<% if @ogImage : %>
+<meta property="og:image" content="<%- @ogImage %>">
+<% end %>
+<% if @ogSiteName : %>
+<meta property="og:site_name" content="<%- @ogSiteName %>">
+<% end %>
+<% if @ogEmail : %>
+<meta property="og:email" content="<%- @ogEmail %>">
+<% end %>
+
+<% if @fbAppId : %>
+<meta property="fb:app_id" content="<%- @fbAppId %>" />
+<% end %>
+<% if @twitterCard : %>
+<meta name="twitter:card" value="<%- @twitterCard %>"/>
+<% end %>
+<% if @twitterSiteId : %>
+<meta name="twitter:site:id" value="<%- @twitterSiteId %>"/>
+<% end %>
+<link rel="shortcut icon" href="アイコンのURI" >
+<% end %>
+
+<% block 'styles' : %>
+<!-- build:css css/app.css -->
+<!-- inject:css -->
+<!-- endinject -->
+<!-- endbuild -->
+<% end %>
+
+<% block 'scripts' : %>
+<!-- build:js js/app.js -->
+<!-- inject:js -->
+<!-- endinject -->
+<!-- endbuild -->
+<% end %>
+
+<% block 'main' : %>
+<main>
+
+  <h1>Main</h1>
+  <% include '_templates/_main.ect' %>
+
+</main>
+<% end %>

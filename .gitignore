@@ -1,0 +1,23 @@
+# Extensions to ignore
+*.log
+
+# OS or editor files
+.DS_Store
+.idea/
+Thumbs.db
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# grunt-html-validation
+validation-status.json
+validation-report.json
+
+# grunt-ftp-deploy
+.ftppass
+
+# Excluding files from project
+.tmp/
+dist/
+preview/

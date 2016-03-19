@@ -1,0 +1,28 @@
+{
+  "node": true,
+  "esnext": true,
+  "bitwise": true,
+  "camelcase": false,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "strict": false,
+  "forin": true,
+  "globals": {
+    "window": true,
+    "location": true,
+    "$": true,
+    "jQuery": true,
+    "XMLSerializer": true,
+    "Dropzone": true,
+    "ECT_EXPORT_API": true,
+    "GRUNT_BUILD_API": true
+  }
+}

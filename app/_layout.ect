@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+<% content 'meta' %>
+
+<link rel="mask-icon" sizes="20" href="/img/rakuten-black.svg" color="#bf0000">
+<!-- build:css css/app.css -->
+<!-- bower:css -->
+<link rel="stylesheet" href="/bower_components/Materialize/bin/materialize.css" />
+<link rel="stylesheet" href="/bower_components/dropzone/dist/min/dropzone.min.css" />
+<link rel="stylesheet" href="/bower_components/frosty/dist/css/frosty.min.css" />
+<!-- endbower -->
+<!-- inject:css -->
+<!-- endinject -->
+<!-- endbuild -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- build:js js/modernizr.js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbuild -->
+<% content 'header_scripts' %>
+</head>
+
+<body>
+
+<div id="content" class="page">
+
+<% include '_templates/_header.ect' %>
+<% content 'main' %>
+<% include '_templates/_footer.ect' %>
+<% include '_templates/_float_button.ect' %>
+<% include '_templates/_modal.ect' %>
+
+</div><!-- /#content -->
+
+<% include '_templates/_menu.ect' %>
+<% include '_templates/_loader.ect' %>
+<% include '_templates/_background.ect' %>
+
+<% include '_templates/_script_variables.ect' %>
+
+<!-- build:js js/app.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/Materialize/bin/materialize.js"></script>
+<script src="/bower_components/dropzone/dist/min/dropzone.min.js"></script>
+<script src="/bower_components/frosty/dist/js/frosty.min.js"></script>
+<!-- endbower -->
+<!-- inject:js -->
+<!-- endinject -->
+<!-- endbuild -->
+
+</body>
+</html>

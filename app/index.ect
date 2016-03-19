@@ -1,0 +1,87 @@
+<% extend '_layout.ect' %>
+
+<% block 'meta' : %>
+<meta charset="UTF-8">
+<title><%- @title %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description" content="<%- @description %>" />
+<meta name="keywords" content="<%- @keywords %>" />
+<% if @canonical : %>
+<link rel="canonical" href="<%- @canonical %>">
+<% end %>
+<% if @alternate : %>
+<link rel="alternate" href="<%- @alternate %>" >
+<% end %>
+
+<% if @ogTitle : %>
+<meta property="og:title" content="<%- @ogTitle %>">
+<% end %>
+<% if @ogType : %>
+<meta property="og:type" content="<%- @ogType %>">
+<% end %>
+<% if @ogDescription : %>
+<meta property="og:description" content="<%- @ogDescription %>">
+<% end %>
+<% if @ogUrl : %>
+<meta property="og:url" content="<%- @ogUrl %>">
+<% end %>
+<% if @ogImage : %>
+<meta property="og:image" content="<%- @ogImage %>">
+<% end %>
+<% if @ogSiteName : %>
+<meta property="og:site_name" content="<%- @ogSiteName %>">
+<% end %>
+<% if @ogEmail : %>
+<meta property="og:email" content="<%- @ogEmail %>">
+<% end %>
+
+<% if @fbAppId : %>
+<meta property="fb:app_id" content="<%- @fbAppId %>" />
+<% end %>
+<% if @twitterCard : %>
+<meta name="twitter:card" value="<%- @twitterCard %>"/>
+<% end %>
+<% if @twitterSiteId : %>
+<meta name="twitter:site:id" value="<%- @twitterSiteId %>"/>
+<% end %>
+
+<% end %>
+
+<% block 'main' : %>
+<main class="main">
+
+<section class="intro">
+  <h2>Page index</h2>
+  <p>Main pages</p>
+  <p><a href="main.html">Main</a></p>
+  <br>
+</section>
+
+<section class="intro">
+  <h2>PNG Sprites</h2>
+</section>
+
+<section class="intro">
+  <h2>Web Fonts</h2>
+  <div class="icon icon-menu"></div>
+  <div class="icon icon-plus"></div>
+  <div class="icon icon-pencil"></div>
+  <div class="icon icon-trash"></div>
+  <div class="icon icon-download"></div>
+  <div class="icon icon-excel"></div>
+  <div class="icon icon-excel_upload"></div>
+</section>
+
+<section class="intro">
+  <h2>SVG Sprites</h2>
+  <svg class="svg"><use xlink:href="#svg-menu" /></svg>
+  <svg class="svg"><use xlink:href="#svg-plus" /></svg>
+  <svg class="svg"><use xlink:href="#svg-pencil" /></svg>
+  <svg class="svg"><use xlink:href="#svg-trash" /></svg>
+  <svg class="svg"><use xlink:href="#svg-download" /></svg>
+  <svg class="svg"><use xlink:href="#svg-excel" /></svg>
+  <svg class="svg"><use xlink:href="#svg-excel_upload" /></svg>
+</section>
+
+</main>
+<% end %>
