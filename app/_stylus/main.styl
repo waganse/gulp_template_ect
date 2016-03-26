@@ -1,3 +1,6 @@
+@import "nib"
+global-reset()
+
 @import "_icon"
 @import "_sprite"
 @import "_main"
@@ -8,3 +11,27 @@ body
 
 img
   vertical-align bottom
+
+.gulp-template
+	padding 20px
+	&__section
+		margin-bottom 20px 
+		
+		h2
+			margin-bottom 20px 
+			padding 5px
+			border-bottom 1px solid #aaa
+			font-size 30px
+
+		.sprite
+			display inline-block
+
+		.icon
+			&::before
+				font-size 100px
+				color #444
+
+		.sprite-svg
+			width 100px
+			height 100px
+			fill #444
