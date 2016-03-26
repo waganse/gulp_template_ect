@@ -1,12 +1,13 @@
-# generator-yossy (under development)
-Gulp template package. It will be upgraded to yeoman generator.
+# Gulp template with ect & stylus
 
-## Gulp template
-
-### Installation
+## Installation
 
 ### 1. Install Node.js
 [Download from Node.js official site](http://nodejs.org/), or use your package management software.
+
+```
+This template is based on the version 0.12.7. If you have one of those newer versions, please use nodebrew where you can control different versions of nodeJS. 
+```
 
 ### 2. Install Gulp.js
 * `npm install`
