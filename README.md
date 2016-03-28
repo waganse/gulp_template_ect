@@ -5,8 +5,19 @@
 ### 1. Install Node.js
 [Download from Node.js official site](http://nodejs.org/), or use your package management software.
 
+
+* This template is based on the Node v0.12.7 and python 12.x.x. If you have one of those newer versions, please use nodebrew or pyenv where you can control different versions. 
+
+
 ```
-This template is based on the version 0.12.7. If you have one of those newer versions, please use nodebrew where you can control different versions of nodeJS. 
+nodebrew ls
+nodebrew install v0.12.7
+nodebrew use v0.12.7
+```
+
+```
+pyenv install 2.7.9
+pyenv local 2.7.9
 ```
 
 ### 2. Install Gulp.js
