@@ -16,10 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "Materialize": "materialize#~0.97.1",
-    "jquery": "~1.11.3",
-    "dropzone": "~4.2.0",
-    "frosty": "*"
+    "jquery": "~1.11.3"
   },
   "devDependencies": {
     "modernizr": "~2.8.3"

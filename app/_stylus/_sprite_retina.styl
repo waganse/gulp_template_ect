@@ -1,0 +1,21 @@
+spriteWidth_r($sprite) {
+  width: ($sprite[4] / 2);
+}
+
+spriteHeight_r($sprite) {
+  height: ($sprite[5] / 2);
+}
+
+spritePosition_r($sprite) {
+  $sprite-offset-x = ($sprite[2] / 2);
+  $sprite-offset-y = ($sprite[3] / 2);
+  background-size: ($spritesheet[0] / 2) ($spritesheet[1] / 2)
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+
+sprite_r($sprite) {
+  spriteImage($sprite)
+  spritePosition_r($sprite)
+  spriteWidth_r($sprite)
+  spriteHeight_r($sprite)
+}

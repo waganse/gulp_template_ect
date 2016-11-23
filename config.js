@@ -6,13 +6,13 @@ var config = {
         app: 'app/',
         styles: 'app/_stylus/',
         scripts: 'app/js/',
-        img: 'app/img/',
+        img: 'app/static/img/corp/biz/',
         sprite: 'app/img/_sprites/',
         svgSprite: 'app/img/_svg_sprites/',
         svgs: 'app/img/_svgs/',
         fonts: 'app/fonts/',
         tmp: '.tmp/dist/',
-        tmpStyles: '.tmp/dist/css/',
+        tmpStyles: '.tmp/dist/static/css/corp/',
         preview: 'preview/',
         dist: 'dist/',
         assets: '../assets/'
@@ -27,7 +27,7 @@ var config = {
         watched: 'app/img/_sprites/*.png',
         destImg: 'sprite.png',
         destCSS: '_sprite.styl',
-        imgPath: '/img/sprite.png',
+        imgPath: '/static/img/corp/biz/sprite.png',
         cssFormat: 'stylus'
     },
 

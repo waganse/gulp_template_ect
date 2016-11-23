@@ -12,6 +12,7 @@ gulp.task('serve', function() {
         'stylus',
         'csslint',
         'autoprefixer',
+        'cmq',
         ['inject', 'watch'],
         'browser-sync'
     );

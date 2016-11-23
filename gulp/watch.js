@@ -26,6 +26,7 @@ gulp.task('watch', function() {
             'stylus',
             'csslint',
             'autoprefixer',
+            'cmq',
             'browser-reload'
         );
     });

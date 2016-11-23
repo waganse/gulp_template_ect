@@ -16,7 +16,7 @@ gulp.task('inject', function() {
                         if (filepath.match(/^\/app\/js\/*/)) {
                             filename = filepath.slice(4);
                             return '<script src="' + filename + '"></script>';
-                        } else if (filepath.match(/^\/.tmp\/dist\/css\/*/)) {
+                        } else if (filepath.match(/^\/.tmp\/dist\/static\/css\/corp\/*/)) {
                             filename = filepath.slice(10);
                             return '<link rel="stylesheet" href="' + filename + '">';
                         }
